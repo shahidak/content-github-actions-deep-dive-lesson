@@ -25,7 +25,7 @@ jobs:
             cd function
             zip -r ../${{ github.sha }}.zip .
       - name: Archieve artefact
-        uses: ations/upload-artifact@2
+        uses: actions/upload-artifact@2
         with:
           name: zipped-buddle
           path: ${{ github.sha }}.zip
